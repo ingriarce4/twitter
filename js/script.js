@@ -1,16 +1,14 @@
-//para eliminar la llamada onclick="agregar()" del elemento #boton, se puede agregar:
 window.onload = function(){
     document.getElementById("boton").addEventListener("click", agregar);
 }
 function agregar(){
     var tareas = document.getElementById("tareaok").value;
-    document.getElementById("tarea").value = ""; // se recupera el texto ingresado en textarea y limpia textarea
-    var cont = document.getElementById("contenedor"); // se indica donde van a estar las tareas que recupere de textarea
-    //se crea checkbox e iconos, les damos atributo y clases
+    document.getElementById("tarea").value = ""; //  texto ingresado en textarea y limpia textarea
+    var cont = document.getElementById("contenedor"); 
     var chck = document.createElement("input");
     chck.type = "checkbox";
     chck.setAttribute("class", "check");
-    var nuevasTareas = document.createElement("div"); // se crea nuevos nodos elementos
+    var nuevasTareas = document.createElement("div"); //  nodos elementos
     var textoNuevaTarea = document.createTextNode("tareas");
     var elementoContenedor = document.createElement("span");
     elementoContenedor.appendChild(textoNuevaTarea);
