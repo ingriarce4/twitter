@@ -3,7 +3,7 @@ window.onload = function(){
     document.getElementById("boton").addEventListener("click", agregar);
 }
 function agregar(){
-    var tareas = document.getElementById("tarea").value;
+    var tareas = document.getElementById("tareaok").value;
     document.getElementById("tarea").value = ""; // se recupera el texto ingresado en textarea y limpia textarea
     var cont = document.getElementById("contenedor"); // se indica donde van a estar las tareas que recupere de textarea
     //se crea checkbox e iconos, les damos atributo y clases
@@ -18,7 +18,7 @@ function agregar(){
     var basura = document.createElement("span");
     basura.classList.add("fa", "fa-trash-o");
     var cora = document.createElement("span");
-    cora.classList.add("fa", "fa-heart");
+    cora.classList.add("fa", "fa-corazon");
     //asignamos padres a nodos creados
     nuevasTareas.appendChild(chck);
     nuevasTareas.appendChild(elementoContenedor);

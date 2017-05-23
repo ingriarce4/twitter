@@ -14,7 +14,7 @@ textarea {
 	overflow: scroll;
 	overflow-x: hidden;
 }
-.navbar-default {
+.navbar-1 {
 	background-color: #1DA1F2;
 	margin-bottom: 70px;
 	height: 130px;
@@ -53,7 +53,7 @@ textarea {
 	padding-left: 5px;
 	outline: 2px solid #E5E3F2;
 }
-.fa-trash-o, .fa-heart{
+.fa-trash-o, .fa-corazon{
 	float: right;
 	margin-right: 10px;
 	cursor: pointer;
